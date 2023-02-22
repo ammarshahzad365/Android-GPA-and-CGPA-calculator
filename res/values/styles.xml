@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_view_subject">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="gradeSpinners">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="fontFamily">sans-serif-smallcaps</item>
+    </style>
+
+    <style name="crSpinners">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="fontFamily">sans-serif-smallcaps</item>
+    </style>
+
+</resources>

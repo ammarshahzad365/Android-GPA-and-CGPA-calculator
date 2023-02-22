@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA Calculator"
+        android:padding="20dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <EditText
+        android:id="@+id/subjectTitle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        style="@style/text_view_subject"
+        android:hint="Calculus" />
+
+    <Spinner
+        android:id="@+id/crSpinner1"
+        style="@style/crSpinners"
+        app:layout_constraintStart_toEndOf="@id/subjectTitle1"
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        app:layout_constraintEnd_toStartOf="@id/gradeSpinner1"/>
+
+    <Spinner
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/gradeSpinner1"
+        style="@style/gradeSpinners"/>
+
+    <EditText
+        android:id = "@+id/subjectTitle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjectTitle1"
+        style="@style/text_view_subject"
+        android:hint="FOP" />
+
+    <Spinner
+        android:id="@+id/crSpinner2"
+        style="@style/crSpinners"
+        app:layout_constraintStart_toEndOf="@id/subjectTitle2"
+        app:layout_constraintTop_toBottomOf="@id/crSpinner1"
+        app:layout_constraintEnd_toStartOf="@id/gradeSpinner2"/>
+
+    <Spinner
+        android:id="@+id/gradeSpinner2"
+        style="@style/gradeSpinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gradeSpinner1"/>
+
+    <EditText
+        android:id = "@+id/subjectTitle3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjectTitle2"
+        style="@style/text_view_subject"
+        android:hint="Discrete Mathematics" />
+
+    <Spinner
+        android:id="@+id/crSpinner3"
+        style="@style/crSpinners"
+        app:layout_constraintStart_toEndOf="@id/subjectTitle3"
+        app:layout_constraintTop_toBottomOf="@id/crSpinner2"
+        app:layout_constraintEnd_toStartOf="@id/gradeSpinner3"/>
+
+    <Spinner
+        android:id="@+id/gradeSpinner3"
+        style="@style/gradeSpinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gradeSpinner2"/>
+
+    <EditText
+        android:id = "@+id/subjectTitle4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjectTitle3"
+        style="@style/text_view_subject"
+        android:hint="Applied Physics" />
+
+    <Spinner
+        android:id="@+id/crSpinner4"
+        style="@style/crSpinners"
+        app:layout_constraintStart_toEndOf="@id/subjectTitle4"
+        app:layout_constraintTop_toBottomOf="@id/crSpinner3"
+        app:layout_constraintEnd_toStartOf="@id/gradeSpinner4"/>
+
+    <Spinner
+        android:id="@+id/gradeSpinner4"
+        style="@style/gradeSpinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gradeSpinner3"/>
+
+    <EditText
+        android:id = "@+id/subjectTitle5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjectTitle4"
+        style="@style/text_view_subject"
+        android:hint="Pakistan Studies" />
+
+    <Spinner
+        android:id="@+id/crSpinner5"
+        style="@style/crSpinners"
+        app:layout_constraintStart_toEndOf="@id/subjectTitle5"
+        app:layout_constraintTop_toBottomOf="@id/crSpinner4"
+        app:layout_constraintEnd_toStartOf="@id/gradeSpinner5"/>
+
+    <Spinner
+        android:id="@+id/gradeSpinner5"
+        style="@style/gradeSpinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gradeSpinner4"/>
+
+    <EditText
+        android:id = "@+id/subjectTitle6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjectTitle5"
+        style="@style/text_view_subject"
+        android:hint="English" />
+
+    <Spinner
+        android:id="@+id/crSpinner6"
+        style="@style/crSpinners"
+        app:layout_constraintStart_toEndOf="@id/subjectTitle6"
+        app:layout_constraintTop_toBottomOf="@id/crSpinner5"
+        app:layout_constraintEnd_toStartOf="@id/gradeSpinner6"/>
+
+    <Spinner
+        android:id="@+id/gradeSpinner6"
+        style="@style/gradeSpinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gradeSpinner5"/>
+
+    <EditText
+        android:id = "@+id/subjectTitle7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjectTitle6"
+        style="@style/text_view_subject"
+        android:hint="Workshop Practice" />
+
+    <Spinner
+        android:id="@+id/crSpinner7"
+        style="@style/crSpinners"
+        app:layout_constraintStart_toEndOf="@id/subjectTitle7"
+        app:layout_constraintTop_toBottomOf="@id/crSpinner6"
+        app:layout_constraintEnd_toStartOf="@id/gradeSpinner7"/>
+
+    <Spinner
+        android:id="@+id/gradeSpinner7"
+        style="@style/gradeSpinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gradeSpinner6"/>
+
+    <EditText
+        android:id = "@+id/subjectTitle8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjectTitle7"
+        style="@style/text_view_subject"
+        android:hint="Add course" />
+
+    <Spinner
+        android:id="@+id/crSpinner8"
+        style="@style/crSpinners"
+        app:layout_constraintStart_toEndOf="@id/subjectTitle8"
+        app:layout_constraintTop_toBottomOf="@id/crSpinner7"
+        app:layout_constraintEnd_toStartOf="@id/gradeSpinner8"/>
+
+    <Spinner
+        android:id="@+id/gradeSpinner8"
+        style="@style/gradeSpinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gradeSpinner7"/>
+
+    <EditText
+        android:id = "@+id/subjectTitle9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjectTitle8"
+        style="@style/text_view_subject"
+        android:hint="Add course" />
+
+    <Spinner
+        android:id="@+id/crSpinner9"
+        style="@style/crSpinners"
+        app:layout_constraintStart_toEndOf="@id/subjectTitle9"
+        app:layout_constraintTop_toBottomOf="@id/crSpinner8"
+        app:layout_constraintEnd_toStartOf="@id/gradeSpinner9"/>
+
+    <Spinner
+        android:id="@+id/gradeSpinner9"
+        style="@style/gradeSpinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gradeSpinner8"/>
+
+    <EditText
+        android:id="@+id/prevCGPA"
+        android:inputType = "numberDecimal"
+        android:layout_width="300dp"
+        style="@style/text_view_subject"
+        android:layout_marginTop="36dp"
+        android:hint="Previous CGPA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subjectTitle9" />
+
+    <EditText
+        android:id="@+id/prevTotalCRs"
+        android:inputType = "number"
+        style="@style/text_view_subject"
+        android:layout_width="300dp"
+        android:layout_marginTop="16dp"
+        android:hint="Total Credit Hours (previously)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prevCGPA" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prevTotalCRs" />
+
+    <TextView
+        android:id="@+id/gpaResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="10dp"
+        android:text="GPA"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
